@@ -48,7 +48,7 @@ A new covariate was created in both the training and validation sets, with a val
 | --- |
 | <img align="center" width="450" height="450" src="/Figures/Figure_4.png"> |
 
-It was expected that a logistic regression model containing the same terms as the formula of LM1 would have an improved classification. This expected result was not observed. Despite the optimization of the formula, 0.87 and 0.65 were the best values of TPR and FPR that could be achieved. Figure 5 in the Appendix contains the ROC curves for the baseline model and the optimized logistic regression model plotted together.  
+It was expected that a logistic regression model containing the same terms as the formula of LM1 would have an improved classification. This expected result was not observed. Despite the optimization of the formula, 0.87 and 0.65 were the best values of TPR and FPR that could be achieved. Figure 5 below contains the ROC curves for the baseline model and the optimized logistic regression model plotted together.  
 | Figure 5 <br/> *ROC Curves for Base Model and Improved Logistic Regression Model* |
 | --- |
 | <img align="center" width="450" height="450" src="/Figures/Figure_5.png"> |
@@ -107,5 +107,3 @@ One unfortunate issue with this dataset was the aggregated demand data. Unique w
 represented Spain as a whole. If these covariates were available independently for each of the five cities, more precise predictions could have been made for each city. This would have likely led to stronger correlations in the data. Data regarding the energy transacted between Spain and other countries was unavailable, and it could possibly have a marked impact on energy prices. Quantifiable data regarding the regulation of energy prices in Spain could be a critical covariate that was missing from the dataset.
 
 If given another chance to attack this same dataset, a couple things could be done differently to improve the results. Instead of relying on weather data for the five largest cities, syncing in data for every publicly available weather station in Spain would improve the results. Although the aggregated electric demand data cannot be unaggregated, additional covariates could be introduced to give a more wholistic depiction of Spain’s weather. Secondly, instead of holding out a validation set, part one of this project would have been better served by a nested cross-validation technique that could preserve time-series data.  
-
-Despite the numerous challenges involved in analyzing the dataset, this project provided a genuine understanding of the questions that can be answered through data and the uncertainty around those answers. This first-hand experience with prediction and inference tools demonstrated their tremendous capabilities and helped develop both an appreciation and respect for data science. 
